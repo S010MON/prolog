@@ -12,6 +12,7 @@
 #### Syntax
 
     .           # Termination of statement
+    ;           # Next example
     r(a,b)      # Relation (lower case)
     X           # Variable (upper case)
 
@@ -25,7 +26,11 @@ List all of the relations in the given relation:
 
         listing(parent).
 
-Query a statement
+Query a statement using constants
 
         parent(tom, bob).
         true
+        
+Query a statement using variables
+
+        parent(X, Y).
