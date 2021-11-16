@@ -13,4 +13,4 @@
 
 Adding a relation to the knowledge base:
 
-        assert(parent(Pam, Bob)).
+        assert(parent(pam, bob)).
