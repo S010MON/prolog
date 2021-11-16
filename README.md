@@ -34,3 +34,7 @@ Query a statement using constants
 Query a statement using variables
 
         parent(X, Y).
+        
+Loading a file
+
+        consult('~/git/prolog/FamilyRelations.pl').
