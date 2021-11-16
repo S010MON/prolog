@@ -29,12 +29,14 @@ List all of the relations in the given relation:
 Query a statement using constants
 
         parent(tom, bob).
-        true
+        true.
         
 Query a statement using variables
 
         parent(X, Y).
+        true.
         
 Loading a file
 
         consult('~/git/prolog/FamilyRelations.pl').
+        true.
