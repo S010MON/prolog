@@ -40,3 +40,12 @@ Loading a file
 
         consult('~/git/prolog/FamilyRelations.pl').
         true.
+        
+ Lists. Formed in two parts [ head | tail ] which is notation for (a.,(b.,(c.,[]))) multiple ways are available to do this:
+
+    [a, b, c] = [x | [b, c] ]
+
+    [a, b, c] = [a, b | [c] ]
+
+    [a, b, c] = [a, b, c | [ ] ]
+
