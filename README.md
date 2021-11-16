@@ -9,7 +9,7 @@
 
     $ swipl
 
-##### Commands
+#### Commands
 
 Adding a relation to the knowledge base:
 
