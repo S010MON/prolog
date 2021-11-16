@@ -9,3 +9,8 @@
 
     $ swipl
 
+##### Commands
+
+Adding a relation to the knowledge base:
+
+        assert(parent(Pam, Bob)).
