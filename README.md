@@ -24,3 +24,8 @@ Adding a relation to the knowledge base:
 List all of the relations in the given relation:
 
         listing(parent).
+
+Query a statement
+
+        parent(tom, bob).
+        true
