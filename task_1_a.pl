@@ -1,0 +1,8 @@
+connected(a,b)
+connected(b,d)
+connected(c,d)
+connected(f,c)
+connected(e,d)
+connected(e,g)
+connected(h,g)
+connected(g,f)
