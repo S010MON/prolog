@@ -1,3 +1,24 @@
+
+connected(a,b).
+connected(b,d).
+connected(c,d).
+connected(f,c).
+connected(e,d).
+connected(e,g).
+connected(h,g).
+connected(g,f).
+
+path(X,Y):- connected(X,Y).
+path(X,Z):- connected(X,Y), connected(Y,Z).
+
+path(A,B,[A,B]):- connected(A,B).
+path(A,B,[A|Tail]):- connected(A,X), path(X,B,Tail).
+
+common_member(X,L1,L2):- ismember(X,L1), ismember(X,L2).
+
+listsum([],0).
+listsum([X|Tail], sum):-listsum(Tail, S), sum is X+S.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This file contains the definition of some useful list operations. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
